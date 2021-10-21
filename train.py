@@ -31,9 +31,9 @@ def train(data_type, seq_length, model, saved_model=None,
                            # '.{epoch:03d}-{val_loss:.3f}.hdf5')
     # filepath = os.path.join('data', 'checkpoints', model + '-' + data_type + str(seq_length) + \
     #                        '.{epoch:03d}-{val_acc:.3f}.hdf5')
-    filepath = os.path.join('/media/yqiao/One Touch/Frontier_cattle_identification-code/DDD',  model + '-' + data_type + str(seq_length) + \
+    filepath = os.path.join('/media/DDD',  model + '-' + data_type + str(seq_length) + \
                            '.{epoch:03d}-{val_acc:.4f}.hdf5')
-    # filepath = os.path.join('/media/yqiao/Seagate Backup Plus Drive/DDD/dairy27',
+    # filepath = os.path.join('/media/DDD/dairy27',
     #                         model + '-' + data_type + str(seq_length) + \
     #                         'best.hdf5')
     checkpointer = ModelCheckpoint(filepath,monitor='val_acc',verbose=1,save_best_only=True, mode='max',period=5)
