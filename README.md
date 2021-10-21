@@ -25,9 +25,8 @@ All models are defined in `models.py`, you could added you new models.
 Model parameters and layers can be chag here.
 
 
-## Data
 
-In the Data folder, are the cattle videos.
+
 
 
 
