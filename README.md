@@ -6,8 +6,10 @@ Tested on Keras 2.02 and and TensorFlow 1.14. Please see the `requirements.txt` 
 
 `pip install -r requirements.txt`
 
-# Download  dataset  using the link:    https://drive.google.com/file/d/13LZmzb5XcqzUVQo3EiTIf4pur4lFHmZD/view?usp=sharing
+ Download  dataset  using the link:    https://drive.google.com/file/d/13LZmzb5XcqzUVQo3EiTIf4pur4lFHmZD/view?usp=sharing
 
+ Unzip the download dataset into  folder,  and creat three  directories： checkpoints, sequences, and logs.
+ 
 2. extract each frame fro the video using:  "python 2_extract_files.py"
 
 3. Extract CNN features from each frame using : extract_features.py
