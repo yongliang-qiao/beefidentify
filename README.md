@@ -6,6 +6,8 @@ Tested on Keras 2.02 and and TensorFlow 1.14. Please see the `requirements.txt` 
 
 `pip install -r requirements.txt`
 
+# Download  dataset into data folder using the link:    https://drive.google.com/file/d/13LZmzb5XcqzUVQo3EiTIf4pur4lFHmZD/view?usp=sharing
+
 2. extract each frame fro the video using:  "python 2_extract_files.py"
 
 3. Extract CNN features from each frame using : extract_features.py
