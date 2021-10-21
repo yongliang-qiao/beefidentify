@@ -19,7 +19,7 @@ def train(data_type, seq_length, model, saved_model=None,
                            # '.{epoch:03d}-{val_loss:.3f}.hdf5')
     # filepath = os.path.join('data', 'checkpoints', model + '-' + data_type + str(seq_length) + \
     #                        '.{epoch:03d}-{val_acc:.3f}.hdf5')
-    filepath = os.path.join('/media/yqiao/Seagate Backup Plus Drive/DDD/IDRes',  model + '-' + data_type + str(seq_length) + \
+    filepath = os.path.join('/media//IDRes',  model + '-' + data_type + str(seq_length) + \
                             '.{epoch:03d}-{val_acc:.3f}.hdf5')
     checkpointer = ModelCheckpoint(filepath,monitor='val_acc',verbose=1,save_best_only=True, mode='max',period=5)
 
@@ -102,7 +102,7 @@ def main():
     if model in ['conv_3d', 'c3d', 'lrcn', 'c3dLSTM']:
         data_type = 'images'
         image_shape = (112, 112,3)
-    elif model in ['lstm_qiao', 'mlp','TCN','Bilstm','cnn_lstm_attention']:
+    elif model in ['lstm', 'mlp','Bilstm','Bilstm’,'cnn_lstm_attention']:
         data_type = 'features'
         image_shape = None
     else:
