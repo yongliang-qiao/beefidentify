@@ -102,7 +102,7 @@ def main():
     if model in ['conv_3d', 'c3d', 'lrcn', 'c3dLSTM']:
         data_type = 'images'
         image_shape = (112, 112,3)
-    elif model in ['lstm', 'mlp','Bilstm','Bilstm’,'cnn_lstm_attention']:
+    elif model in ['lstm', 'lstmdouble','mlp','SimpleRNN','Bilstm','cnn_lstm_attention']:
         data_type = 'features'
         image_shape = None
     else:
